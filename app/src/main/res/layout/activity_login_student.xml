@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/logo_hust" />
+
+    <EditText
+        android:id="@+id/edtID_student"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        android:drawableLeft="@drawable/user"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="ID Student"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogin" />
+
+    <EditText
+        android:id="@+id/edtPassword_Student"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:background="@drawable/custom_input"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin_Student"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtID_student"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_password_student"
+        android:text="Show password"
+        android:textSize="15dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginStart="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintRight_toLeftOf="@id/remember_me_student"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword_Student"
+        />
+
+    <CheckBox
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/remember_me_student"
+        android:text="Remember Me"
+        android:textSize="15dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/show_password_student"
+        />
+
+
+    <Button
+        android:id="@+id/btnLogin_Student"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/round_button_format"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

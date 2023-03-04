@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".EditClassroomActivity"
+    tools:showIn="@layout/activity_edit_classroom">
+
+    <TextView
+        android:id="@+id/tvTitleClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/activity_horizontal_padding"
+        android:paddingBottom="@dimen/activity_horizontal_padding"
+        android:text="@string/themlop"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/dark_blue" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitleClass"
+        android:stretchColumns="*"
+        >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue"
+                android:text="@string/malop" />
+
+            <EditText
+                android:id="@+id/etIDClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue"
+                android:ems="10" >
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue"
+                android:text="@string/tenlop" />
+
+            <EditText
+                android:id="@+id/etNameClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue"
+                android:ems="10" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starting Time"
+                android:textColor="@color/dark_blue"
+                android:paddingTop="@dimen/activity_horizontal_padding"/>
+
+
+
+            <EditText
+                android:id="@+id/etStart"
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+
+                android:focusable="false"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="Choose the time"
+                android:textColorHint="@color/dark_blue" />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gioketthuc"
+                android:textColor="@color/dark_blue"
+                android:paddingTop="@dimen/activity_horizontal_padding"/>
+
+
+            <EditText
+                android:id="@+id/etEnd"
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:focusable="false"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="Choose the time"
+                android:textColorHint="@color/dark_blue" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weekday"
+                android:textColor="@color/dark_blue"
+                android:paddingTop="@dimen/activity_horizontal_padding"/>
+
+
+            <EditText
+                android:id="@+id/etWeekDay"
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:focusable="false"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="Choose weekday"
+                android:textColorHint="@color/dark_blue" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue"
+                android:text="@string/phonghoc"
+                android:paddingTop="@dimen/activity_horizontal_padding"/>
+
+            <EditText
+                android:id="@+id/etClassRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue"
+                android:ems="10" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="@dimen/activity_horizontal_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnClear"
+                    android:background="@color/teal_dark_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_orange"
+                    android:onClick="clear"
+                    android:text="@string/xoa_trang"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="@dimen/activity_horizontal_padding"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_orange"
+                android:background="@color/teal_dark_blue"
+                android:onClick="save"
+                android:text="@string/luulop" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

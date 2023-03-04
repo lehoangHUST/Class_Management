@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="activity_horizontal_padding">5dp</dimen>
+    <dimen name="activity_vertical_padding">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="divider_height">2dp</dimen>
+    <dimen name="width_small_column">30dp</dimen>
+    <dimen name="width_image_button">40dp</dimen>
+    <dimen name="height_image_button">40dp</dimen>
+    <dimen name="width_button_date">50dp</dimen>
+    <dimen name="height_button_date">50dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+</resources>
